@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block body_block %}
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Game information</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th style="width: 10px">ID</th>
+                                <th>game_date</th>
+                                <th>team_id_home</th>
+                                <th>wl_home</th>
+                                <th>pts_home</th>
+                                <th>team_id_away</th>
+                                <th>wl_away</th>
+                                <th>pts_away</th>
+
+
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for game in games %}
+                                <tr>
+                                    <td>{{ game.game_id }}</td>
+                                    <td>{{ game.game_date }}</td>
+                                    <td>{{ game.team_id_home__full_name__name }}</td>
+                                    <td>{{ game.wl_home }}</td>
+                                    <td>{{ game.PTS_home }}</td>
+                                    <td>{{ game.team_id_away__full_name__name }}</td>
+                                    <td>{{ game.wl_away }}</td>
+                                    <td>{{ game.PTS_away }}</td>
+
+                                </tr>
+                            {% endfor %}
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer clearfix">
+                        <ul class="pagination pagination-sm m-0 float-right">
+                            <li class="page-item"><a class="page-link pre" href="#">&laquo;</a></li>
+                            <li class="page-item"><a class="page-link next" href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.next').on("click", function () {
+            var page = GetUrlParam("page") || 1
+            var team_name = GetUrlParam("team_name")
+            var next_page = parseInt(page) + 1
+            console.log(team_name)
+            window.location.href = "?team_name=" + team_name + "&page=" + next_page
+        })
+        $('.pre').on("click", function () {
+            var page = GetUrlParam("page") || 1
+            var team_name = GetUrlParam("team_name")
+            var next_page = parseInt(page) - 1
+            window.location.href = "?team_name=" + team_name + "&page=" + next_page
+        })
+    </script>
+{% endblock %}

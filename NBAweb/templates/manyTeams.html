@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teams Inforamtion</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% load static %}
+{% block body_block %}
+<div>
+  <h2 class="h3 mb-3 font-weight-normal">Team list</h2>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'maverick.jpg' %}" alt="Dallas Mavericks">
+      <div class="caption">
+        <h3>Dallas Mavericks</h3>
+        <p>Founded in 1980,Texas</p>
+        <p><a href="https://china.nba.com/mavericks/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'spurs.jpg' %}" alt="San Antonio Spurs">
+      <div class="caption">
+        <h3>San Antonio Spurs</h3>
+        <p>Founded in 1976,Texas</p>
+        <p><a href="https://china.nba.com/spurs/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'grizzlies.jpg' %}" alt="Memphis Grizzlies">
+      <div class="caption">
+        <h3>Memphis Grizzlies</h3>
+        <p>Founded in 1995,Tennessee</p>
+        <p><a href="https://china.nba.com/grizzlies/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'rockets.jpg' %}" alt="Huston Rockets">
+      <div class="caption">
+        <h3>Huston Rockets</h3>
+        <p>Founded in 1967,Texas</p>
+        <p><a href="https://china.nba.com/rockets/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'suns.jpg' %}" alt="Phoenix Suns">
+      <div class="caption">
+        <h3>Phoenix Suns</h3>
+        <p>Founded in 1968,Arizona</p>
+        <p><a href="https://china.nba.com/suns/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'pelicans.jpg' %}" alt="New Orleans Pelicans">
+      <div class="caption">
+        <h3>New Orleans Pelicans</h3>
+        <p>Founded in 2002,Louisiana</p>
+        <p><a href="https://china.nba.com/pelicans/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'clippers.jpg' %}" alt="Los Angeles Clippers">
+      <div class="caption">
+        <h3>Los Angeles Clippers</h3>
+        <p>Founded in 1970,California</p>
+        <p><a href="https://china.nba.com/clippers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'lakers.jpg' %}" alt="Los Angeles Lakers">
+      <div class="caption">
+        <h3>Los Angeles Lakers</h3>
+        <p>Founded in 1948,California</p>
+        <p><a href="https://china.nba.com/lakers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'warriors.jpg' %}" alt="Golden State Warriors">
+      <div class="caption">
+        <h3>Golden State Warriors</h3>
+        <p>Founded in 1946,California</p>
+        <p><a href="https://china.nba.com/warriors/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'kings.jpg' %}" alt="Sacramento Kings">
+      <div class="caption">
+        <h3>Sacramento Kings</h3>
+        <p>Founded in 1948,California</p>
+        <p><a href="https://china.nba.com/kings/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'jazz.jpg' %}" alt="Utah Jazz">
+      <div class="caption">
+        <h3>Utah Jazz</h3>
+        <p>Founded in 1974,Utah</p>
+        <p><a href="https://china.nba.com/jazz/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'nuggets.jpg' %}" alt="Denver Nuggets">
+      <div class="caption">
+        <h3>Denver Nuggets</h3>
+        <p>Founded in 1976,Colorado</p>
+        <p><a href="https://china.nba.com/nuggets/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'blazers.jpg' %}" alt="Portland Trail Blazers">
+      <div class="caption">
+        <h3>Portland Trail Blazers</h3>
+        <p>Founded in 1970,Oregon</p>
+        <p><a href="https://china.nba.com/blazers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'timberwolves.jpg' %}" alt="Minnesota Timberwolves">
+      <div class="caption">
+        <h3>Minnesota Timberwolves</h3>
+        <p>Founded in 1989,Minnesota</p>
+        <p><a href="https://china.nba.com/timberwolves/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'thunder.jpg' %}" alt="Oklahoma City Thunder">
+      <div class="caption">
+        <h3>Oklahoma City Thunder</h3>
+        <p>Founded in 1967,Oklahoma</p>
+        <p><a href="https://china.nba.com/thunder/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'seventysixers.jpg' %}" alt="Philadelphia 76ers">
+      <div class="caption">
+        <h3>Philadelphia 76ers</h3>
+        <p>Founded in 1949,Pennsylvania</p>
+        <p><a href="https://china.nba.com/sixers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'nets.jpg' %}" alt="Brooklyn Nets">
+      <div class="caption">
+        <h3>Brooklyn Nets</h3>
+        <p>Founded in 1976,New York</p>
+        <p><a href="https://china.nba.com/nets/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'knicks.jpg' %}" alt="New York Knicks">
+      <div class="caption">
+        <h3>New York Knicks</h3>
+        <p>Founded in 1946,New York</p>
+        <p><a href="https://china.nba.com/knicks/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'celtics.jpg' %}" alt="Boston Celtics">
+      <div class="caption">
+        <h3>Boston Celtics</h3>
+        <p>Founded in 1946,Massachusetts</p>
+        <p><a href="https://china.nba.com/celtics/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'raptors.jpg' %}" alt="Toronto Raptors">
+      <div class="caption">
+        <h3>Toronto Raptors</h3>
+        <p>Founded in 1995,Ontario</p>
+        <p><a href="https://china.nba.com/raptors/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'hawks.jpg' %}" alt="Atlanta Hawks">
+      <div class="caption">
+        <h3>Atlanta Hawks</h3>
+        <p>Founded in 1949,Atalanta</p>
+        <p><a href="https://china.nba.com/hawks/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'heat.jpg' %}" alt="Miami Heat">
+      <div class="caption">
+        <h3>Miami Heat</h3>
+        <p>Founded in 1988,Florida</p>
+        <p><a href="https://china.nba.com/heat/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'wizards.jpg' %}" alt="Washington Wizards">
+      <div class="caption">
+        <h3>Washington Wizards</h3>
+        <p>Founded in 1961,District of Columbia</p>
+        <p><a href="https://china.nba.com/wizards/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'hornets.jpg' %}" alt="Charlotte Hornets">
+      <div class="caption">
+        <h3>Charlotte Hornets</h3>
+        <p>Founded in 1988,North Carolina</p>
+        <p><a href="https://china.nba.com/hornets/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'magic.jpg' %}" alt="Orlando Magic">
+      <div class="caption">
+        <h3>Orlando Magic</h3>
+        <p>Founded in 1989,Florida</p>
+        <p><a href="https://china.nba.com/magic/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'bucks.jpg' %}" alt="Milwaukee Bucks">
+      <div class="caption">
+        <h3>Milwaukee Bucks</h3>
+        <p>Founded in 1968,Wisconsin</p>
+        <p><a href="https://china.nba.com/bucks/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'pacers.jpg' %}" alt="Indiana Pacers">
+      <div class="caption">
+        <h3>Indiana Pacers</h3>
+        <p>Founded in 1976,Indiana</p>
+        <p><a href="https://china.nba.com/pacers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row my-4"></div>
+
+<div class="row">
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'bulls.jpg' %}" alt="Chicago Bulls">
+      <div class="caption">
+        <h3>Chicago Bulls</h3>
+        <p>Founded in 1966,Illinois</p>
+        <p><a href="https://china.nba.com/bulls/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'cavaliers.jpg' %}" alt="Cleveland Cavaliers">
+      <div class="caption">
+        <h3>Cleveland Cavaliers</h3>
+        <p>Founded in 1970,Ohio</p>
+        <p><a href="https://china.nba.com/cavaliers/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="thumbnail">
+      <img src="{% static 'pistons.jpg' %}" alt="Detroit Pistons">
+      <div class="caption">
+        <h3>Detroit Pistons</h3>
+        <p>Founded in 1948,Michigan</p>
+        <p><a href="https://china.nba.com/pistons/" class="btn btn-primary" role="button">Official site</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
+</body>
+</html>

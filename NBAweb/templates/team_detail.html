@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block body_block %}
+    <section class="content">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Team information</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th style="width: 10px">ID</th>
+                                <th>full name</th>
+                                <th>name</th>
+                                <th>city</th>
+                                <th>founded_year</th>
+
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for team in teams %}
+                                <tr>
+                                    <td>{{ team.team_id }}</td>
+                                    <td>{{ team.full_name }}</td>
+                                    <td>{{ team.full_name__name }}</td>
+                                    <td>{{ team.city__city_name }}</td>
+                                    <td>{{ team.founded_year }}</td>
+                                </tr>
+                            {% endfor %}
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer clearfix">
+                        <ul class="pagination pagination-sm m-0 float-right">
+                            <li class="page-item"><a class="page-link pre" href="#">&laquo;</a></li>
+                            <li class="page-item"><a class="page-link next" href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.next').on("click", function () {
+            var page = GetUrlParam("page") || 1
+            var team_name = GetUrlParam("team_name")
+            var next_page = parseInt(page) + 1
+            console.log(team_name)
+            window.location.href = "?team_name=" + team_name + "&page=" + next_page
+        })
+        $('.pre').on("click", function () {
+            var page = GetUrlParam("page") || 1
+            var team_name = GetUrlParam("team_name")
+            var next_page = parseInt(page) - 1
+            window.location.href = "?team_name=" + team_name + "&page=" + next_page
+        })
+    </script>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+{% extends "base.html" %}
+
+{% block body_block %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 bg-light">
+                <h2 class="h3 mb-3 font-weight-normal">Registration</h2>
+                <form method="post" class="login-form">
+                    {% if message %}
+                        <div style="color:red">{{ message }} Please try again!</div>
+                    {% endif %}
+                    {% csrf_token %}
+                    <div class="form-error">{{ form.password.errors }}</div>
+                    <div class="form-error">{{ form.username.errors }}</div>
+                    <input name="{{ form.username.html_name }}" type="text" class="form-control" placeholder="Username"
+                           id="{{ form.username.id_for_label }}">
+                    <input name="{{ form.password.html_name }}" type="password" class="form-control"
+                           placeholder="Password" id="{{ form.password.id_for_label }}">
+
+                    <input name="{{ form.password_retype.html_name }}" type="password" class="form-control"
+                           placeholder="Input Password again" id="{{ form.password_retype.id_for_label }}">
+                    <input name="{{ form.invitation_code.html_name }}" type="text" class="form-control"
+                           placeholder="Invitation Code" id="{{ form.invitation_code.id_for_label }}">
+                    <button type="submit" class="btn btn-lg btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <style>
+        .form-error{
+            color: red;
+        }
+    </style>
+{% endblock %}
+{% include "margin.html" %}
+    {% include "margin.html" %}
+
+</body>
+</html>

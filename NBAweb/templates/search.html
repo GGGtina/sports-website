@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block body_block %}
+    <h2 class="h3 mb-3 font-weight-normal">Search</h2>
+    <center>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for NBA teams" id="team2">
+                    <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" id="id-team-detail">Search!</button>
+      </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-4"></div>
+        </div><!-- /.row -->
+
+        <div class="row my-4"></div>
+
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for NBA players" id="player">
+                    <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" id="id-player-detail">Search!</button>
+      </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-4"></div>
+        </div><!-- /.row -->
+
+        <div class="row my-4"></div>
+
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for Game records" id="team">
+                    <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" id="id-game-detail">Search!</button>
+      </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-4"></div>
+        </div><!-- /.row -->
+    </center>
+    <script>
+        $("#id-player-detail").on("click", function () {
+            window.location.href = "/dataweb/player_detail/?player_name=" + $("#player").val()
+        })
+        $("#id-game-detail").on("click", function () {
+            window.location.href = "/dataweb/game_detail/?team_name=" + $("#team").val()
+        })
+        $("#id-team-detail").on("click", function () {
+            window.location.href = "/dataweb/team_detail/?team_name=" + $("#team2").val()
+        })
+    </script>
+{% endblock %}
+{% include "margin.html" %}
+    {% include "margin.html" %}
+</body>
+</html>

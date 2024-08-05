@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block body_block %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 bg-light">
+            <h2 class="h3 mb-3 font-weight-normal">About our site</h2>
+            <p class="lead text-left">NBA statistics is a website with tons of NBA statistics. You can find statistics
+            about NBA teams, players and games. Visitors only have no access to search. Sign up
+            and you can search for statistics about NBA teams. Elite membership enables you have
+            full access to our database. Contact the website administrator by email (Karilie@outlook.com) for invitation code to
+             be a elite member now!</p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    {% include "margin.html" %}
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 bg-light">
+            <h2 class="h3 mb-3 font-weight-normal">How to search statistics</h2>
+            <p class="lead text-left">In the search page you can type the player's name and find
+             out their statistics. In two different search box, typing team's name will bring you
+             with game records and team statistics.</p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>
